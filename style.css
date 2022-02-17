@@ -38,7 +38,7 @@ body {
 }
 
 [class^="dice-"]:hover [class^="point-"] {
-  background-color: rgb(149, 137, 210);
+  background-color: rgb(49, 131, 176);
 }
 .dice-1 {
   justify-content: center;
@@ -92,9 +92,14 @@ body {
   text-decoration: underline;
   font-size: 4em;
 }
+.footer{
 
+  margin-top: 10em;
+  display: flex;
+  justify-content: center;
+}
 .footer a {
-  margin-left: 70vw;
+
   color: black;
   background-color: white;
   padding: 1em 3em;
