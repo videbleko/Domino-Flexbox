@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --diceColor: white;
+  --bodyBgColor: rgb(0, 0, 0);
+}
+
+body {
+  background-color: var(--bodyBgColor);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+[class^="dice-"] {
+  width: 12em;
+  height: 12em;
+  border-radius: 0.5em;
+  background-color: var(--diceColor);
+  margin: 1em;
+  padding: 0.4em;
+  display: flex;
+}
+
+[class^="point-"] {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: black;
+}
+[class^="group"] {
+  display: flex;
+}
+
+[class^="dice-"]:hover [class^="point-"] {
+  background-color: rgb(149, 137, 210);
+}
+.dice-1 {
+  justify-content: center;
+  align-items: center;
+}
+
+.dice-2 {
+  justify-content: space-between;
+}
+
+.point-2-2 {
+  align-self: flex-end;
+}
+
+.dice-3 {
+  justify-content: space-between;
+}
+.point-3-2 {
+  align-self: center;
+}
+.point-3-3 {
+  align-self: flex-end;
+}
+.dice-4 {
+  justify-content: space-between;
+}
+.group1 {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.group2 {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dice-5 {
+  justify-content: space-between;
+}
+.point-5-3 {
+  align-self: center;
+}
+
+.dice-6 {
+  justify-content: space-between;
+}
+.title {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 4em;
+}
+
+.footer a {
+  margin-left: 70vw;
+  color: black;
+  background-color: white;
+  padding: 1em 3em;
+  border-radius: .5em;
+}
+.footer a:hover{
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+} 
